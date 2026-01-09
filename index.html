@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="main.js"></script>
+
+  <div class="quiz-container">
+    <h2 id="question">Question text</h2>
+
+    <div class="options">
+      <label><input type="radio" name="answer" value="a"> <span id="optA"></span></label><br>
+      <label><input type="radio" name="answer" value="b"> <span id="optB"></span></label><br>
+      <label><input type="radio" name="answer" value="c"> <span id="optC"></span></label><br>
+      <label><input type="radio" name="answer" value="d"> <span id="optD"></span></label>
+    </div>
+
+    <button id="submitBtn">Submit</button>
+
+    <h3 id="result"></h3>
+  </div>
+
+  <script src="dom.js"></script>
 </body>
 </html>
