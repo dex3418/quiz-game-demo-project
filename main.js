@@ -82,7 +82,6 @@ let quizData = [
 ];
 
 
-// DOM selection
 let questionEl = document.getElementById("question");
 let optA = document.getElementById("optA");
 let optB = document.getElementById("optB");
@@ -94,7 +93,6 @@ let resultEl = document.getElementById("result");
 let currentQuestion = 0;
 let score = 0;
 
-// Load question
 function loadQuiz() {
   let currentQuiz = quizData[currentQuestion];
   questionEl.innerText = currentQuiz.question;
@@ -106,7 +104,6 @@ function loadQuiz() {
 
 loadQuiz();
 
-// Submit event
 submitBtn.addEventListener("click", function () {
   let selectedAnswer;
 
@@ -133,3 +130,4 @@ submitBtn.addEventListener("click", function () {
     resultEl.innerText = "Your Score: " + score + "/" + quizData.length;
   }
 });
+
